@@ -1,0 +1,44 @@
+*{
+    
+}
+
+body{
+  background-color: #000;
+  justify-content: center;
+}
+
+header{
+    background-color: white;
+}
+
+h1{
+    position:relative;
+    top:100px;
+    left:700px;
+    font-size:50px;
+    font-family:cursive;
+}
+
+img{
+    position:relative;
+    left:450px;
+    bottom:40px;
+}
+
+h1{
+ color:rgb(68, 68, 161);   
+}
+
+h2{
+    color:yellow;
+}
+
+/*#t1,#t2,#t3,#t4,#t5{
+  background-color: white;
+  column-gap: normal;
+}
+
+#t1{
+   
+    
+}*/
