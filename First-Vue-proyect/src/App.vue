@@ -23,16 +23,14 @@ const salutate = (texto) => {
   />
   </div>
 
-  <fo />
+  <fo/>
 
 </template>
 
 <style scoped>
-
 .card-container {
   justify-content: center;
   gap: 20px;
   padding: 40px;
 }
-
 </style>
