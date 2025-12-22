@@ -5,7 +5,7 @@ Just a rookie fullstack developer doing extra work before the year is over...
 Hope you'll see me again with this and others projects.
 Thanks!!!.
 
-Tec Dominated Today:
+Tec Dominated Till this day:
 * **Front:** HTML5, CSS3 (Scoped), Vue.js 3 (Composition API).
 * **IDE:** Node.js, Vite.
 * **Verions Control:** Git + GitHub Desktop.
