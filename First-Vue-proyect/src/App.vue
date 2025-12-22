@@ -1,5 +1,7 @@
 <script setup>
 import tarjeta from "./components/Tarjetas.vue"
+import he from "./components/Head.vue"
+
 const salutate = (texto) => {
     alert("Entrando a: " + texto)
   }
@@ -13,6 +15,9 @@ const salutate = (texto) => {
 </script>
 
 <template>
+  <header>
+  <he title="Easy Peasy English"/>  
+  </header>
   <div class="card-container">
   <tarjeta v-for="card in Cards" :key=card.id :text=card.texto @clickBoton="salutate(card.texto)"
   />
