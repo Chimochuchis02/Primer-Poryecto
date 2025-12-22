@@ -1,6 +1,7 @@
 <script setup>
 import tarjeta from "./components/Tarjetas.vue"
-import he from "./components/Head.vue"
+import MainHeader from "./components/Head.vue"
+import fo from "./components/Foot.vue"
 
 const salutate = (texto) => {
     alert("Entrando a: " + texto)
@@ -15,24 +16,23 @@ const salutate = (texto) => {
 </script>
 
 <template>
-  <header>
-  <he title="Easy Peasy English"/>  
-  </header>
+<MainHeader/> 
+
   <div class="card-container">
   <tarjeta v-for="card in Cards" :key=card.id :text=card.texto @clickBoton="salutate(card.texto)"
   />
   </div>
+
+  <fo />
+
 </template>
 
 <style scoped>
-body{
-  margin: 0;
-  padding: 0;
-  background: radial-gradient(circle, #3b3b3b 0%, #000000 100%);
-  min-height: 100vh;
-} 
 
-.card-container{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.card-container {
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
 }
+
 </style>

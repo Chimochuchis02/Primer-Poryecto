@@ -1,21 +1,22 @@
-<script setup>
-defineProps(["title"])
-</script>
-
 <template>
-<header class="h">
-<h1>{{ title }}</h1>
-</header>    
+  <div class="h">
+    <h3>Easy Peasy English</h3>
+  </div>
 </template>
 
 <style scoped>
-.h{
-  text-align: center;
-  background-color: white;  
-}
+  
+  div{
+    position:absolute;
+    bottom:900px;
+    width:100%;
+    right:2px;
+    text-align: center;
+    height:3.5%;
+  }
 
-h1{
- color:pink;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}    
+  h3{
+    color:rgb(243, 113, 134);
+    background-color: #000;
+  }
 </style>
