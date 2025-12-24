@@ -2,17 +2,21 @@
 import tarjeta from "./components/Tarjetas.vue"
 import MainHeader from "./components/Head.vue"
 import fo from "./components/Foot.vue"
+import { ref, onMounted } from 'vue'
 
 const salutate = (texto) => {
     alert("Entrando a: " + texto)
   }
-  const Cards = [
-  { id: 1, texto: "Clases Practicas" },
-  { id: 2, texto: "Material Didactico" },
-  { id: 3, texto: "Clases Virtuales" },
-  { id: 4, texto: "Tarjeta 4" },
-  { id: 5, texto: "Tarjeta 5" }
-]  
+
+  const Cards = ref([])
+  onMounted(async () => {
+    try {
+        const res = await fetch('http://127.0.0.1:8000/api/tarjetas');
+        Cards.value = await res.json();
+    } catch (error) {
+        console.error("Error al conectar con Laravel:", error);
+    }
+});
 </script>
 
 <template>
