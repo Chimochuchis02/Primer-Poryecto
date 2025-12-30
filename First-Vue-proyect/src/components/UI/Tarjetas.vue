@@ -13,10 +13,10 @@ defineProps(['text'])
 <style scoped>
   .card-V2{
   background-color: white;
-  color: #333;
+  color: blue;
   padding: 20px;
   border-radius: 12px;
-  border-left: 5px solid #42b883; /* El verde de Vue */
+  border-left: 5px solid red; 
   margin: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s;
@@ -24,10 +24,10 @@ defineProps(['text'])
   
   .card-V2:hover{
    transform: translateY(-5px);
+   background-color: pink;
   }
 
   button{
-  background: #42b883;
   color: white;
   border: none;
   padding: 8px 15px;

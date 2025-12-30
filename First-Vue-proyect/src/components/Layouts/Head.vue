@@ -8,11 +8,11 @@
   
   div{
     position:absolute;
-    bottom:900px;
+    bottom:750px;
     width:100%;
     right:2px;
     text-align: center;
-    height:3.5%;
+    height:180px;
   }
 
   h3{

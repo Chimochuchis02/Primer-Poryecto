@@ -1,7 +1,7 @@
 <script setup>
-import tarjeta from "./components/Tarjetas.vue"
-import MainHeader from "./components/Head.vue"
-import fo from "./components/Foot.vue"
+import tarjeta from "./components/UI/Tarjetas.vue"
+import MainHeader from "./components/Layouts/Head.vue"
+import fo from "./components/Layouts/Foot.vue"
 import { ref, onMounted } from 'vue'
 
 const salutate = (texto) => {
